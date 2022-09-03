@@ -12,6 +12,7 @@ export const config = {
     // password: process.env.POSTGRES_PASSWORD, 
     // database: process.env.POSTGRES_DB, 
     // host: process.env.POSTGRES_HOST, 
+    // aws_media_bucket: process.env.AWS_BUCKET,
     // aws_region: process.env.AWS_REGION,
     // aws_profile: process.env.AWS_PROFILE,
     // jwt: {
@@ -23,7 +24,7 @@ export const config = {
     host: "database-1.chl1kfuz4ezd.us-east-1.rds.amazonaws.com", 
     port: Number(process.env.PORT), 
     dialect: "postgres",
-    aws_media_bucket: process.env.AWS_BUCKET,
+    aws_media_bucket: "arn:aws:s3:::khatibbucket",
     aws_region: "us-east-1",
     aws_profile: "default",
     jwt: {
