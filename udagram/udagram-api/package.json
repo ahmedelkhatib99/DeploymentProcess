@@ -13,7 +13,7 @@
     "prod": "npx tsc && node ./www/server.js",
     "clean": "rm -rf www/ || true",
     "build": "npx tsc",
-    "deploy": "eb list && eb use udagram-api-dev && eb deploy",
+    "deploy": "eb list && eb use udagram-api-dev && chmod +x bin/deploy.sh && bin/deploy.sh && eb deploy",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
